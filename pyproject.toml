@@ -1,0 +1,26 @@
+[project]
+name = "sitemap-to-sqlite"
+version = "0.1"
+description = "Fetch data from a site's sitemap.xml into a SQLite table"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/sitemap-to-sqlite"
+Changelog = "https://github.com/simonw/sitemap-to-sqlite/releases"
+Issues = "https://github.com/simonw/sitemap-to-sqlite/issues"
+CI = "https://github.com/simonw/sitemap-to-sqlite/actions"
+
+[project.entry-points.console_scripts]
+sitemap-to-sqlite = "sitemap_to_sqlite.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
